@@ -1,3 +1,4 @@
+import { Hero } from './../../hero.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+
+  hero: Hero = {
+    id: 1,
+    name: 'João'
+  }
 
   constructor() { }
 
