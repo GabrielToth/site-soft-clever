@@ -1,4 +1,5 @@
 import { Hero } from './../../hero.model';
+// eslint-disable-next-line sort-imports
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,15 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-
   hero: Hero = {
     id: 1,
     name: 'João'
-  }
+  };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
+  ngOnInit(): void {}
 }
