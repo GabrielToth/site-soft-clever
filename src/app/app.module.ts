@@ -7,9 +7,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './content/home/home.component';
+import { TopBannerComponent } from './content/home/top-banner/top-banner.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, FooterComponent, HomeComponent],
+  declarations: [AppComponent, MenuComponent, FooterComponent, HomeComponent, TopBannerComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
