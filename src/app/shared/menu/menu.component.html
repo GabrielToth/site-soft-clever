@@ -1,3 +1,57 @@
-<h2>{{hero.name | uppercase}} detalhes</h2>
-<div><span>Nome: {{hero.name}}</span>
-<span>Número: {{hero.id}}</span></div>
+<!--<div class="hamburger-menu" [ngClass]="{'hamburger-menu-open': menuOpened}">
+    <button class="menu-button" aria-label="Open Menu" (click)="toggleMenu()"></button>
+</div>-->
+<div class="menu" [ngClass]="{'menu-open': menuOpened}">
+    <div class="logo-menu">
+        <a href="/">
+            <img class="logo-image" src="assets/images/webp/softclever-logo.webp" type="image/webp"
+                alt="Imagem da LOGO da SoftClever, empresa destaque quando o assunto é solucionar seus problemas." />
+        </a>
+    </div>
+
+    <nav class='menu-container'>
+        <ul class="menu-links">
+            <li class="menu-redirect">
+                <a class="menu-link-redirect" href="../../public/index.html" aria-label="Página principal - HOME">
+                    Home
+                </a>
+            </li>
+
+            <li class="menu-redirect">
+                <a class="menu-link-redirect" href="../../content/menu/solucoes.html" rel="next"
+                    aria-label="Veja nossas principais soluções e se surpreenda">
+                    Apresentação das Soluções
+                </a>
+            </li>
+
+            <li class="menu-redirect">
+                <a class="menu-link-redirect" href="https://www.softclever.com.br/predesigned-pages/a-empresa/"
+                    rel="next"
+                    aria-label="Conheça um pouco da nossa história e do porquê sermos destaque no mercado.">
+                    A Empresa
+                </a>
+            </li>
+
+            <li class="menu-redirect">
+                <a class="menu-link-redirect" href="https://www.softclever.com.br/sections-listings/clients/"
+                    rel="next" aria-label="Conheça alguns dos nossos clientes.">
+                    Clientes
+                </a>
+            </li>
+
+            <li class="menu-redirect">
+                <a class="menu-link-redirect" href="https://www.softclever.com.br/contato/" rel="next"
+                    aria-label="Entre em contato conosco, estaremos te esperando de braços abertos.">
+                    Contato
+                </a>
+            </li>
+            <li class="menu-redirect">
+                <a class="menu-link-redirect" href="../../content/menu/faq.html" rel="next"
+                    aria-label="Ficou com alguma dúvida? Veja nosso FAQ ou entre em contato com a gente.">
+                    FAQ
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="" [ngClass]="{'menu-open-black': menuOpened}"></div>

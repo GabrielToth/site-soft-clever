@@ -1,11 +1,45 @@
 footer {
-    background-color: #111;
+    background-color: #000;
+    color: #888;
+    border-top: 1px solid #333;
+}
+
+.footer-sections {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .footer-header {
     color: white;
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
 }
 
 .footer-item {
+    padding: 8px 0;
+}
+
+.footer-link {
     color: #888;
+    font-size: 14px;
+    transition-duration: .2s;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    
+    &:hover {
+      color: #fff;
+    }
+}
+
+.footer-last-line-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
