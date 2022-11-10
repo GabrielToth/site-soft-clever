@@ -8,41 +8,39 @@
 
   padding: 40px 0 64px 0;
 
+  margin-top: -64px;
+
+
   .first-banner {
-    width: 900px;
-    height: 900px;
+    width: 100%;
+
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 1/1;
-    color: #fff;
+    
+    color: var(--text-color);
+
+    overflow: hidden;
+
+    .banner {
+      width: 100%;
+      transform: translateY(200px);
+    }
   }
 
   .top-banner-principal-product {
     position: relative;
     text-align: center;
-    margin-top: 30%;
-    padding: 0 32px;
-
-    .logo {
-      color: #fff;
-      font-size: 16px;
-      font-weight: 400;
-    }
 
     .product-title {
-      font-size: 64px;
-      font-weight: 700;
+      font-size: 76px;
+      font-weight: 900;
       line-height: 1.5em;
 
-      background-clip: text;
+      color: #19FC4B;
 
-      background: -webkit-linear-gradient(#fff, #888);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-      margin-top: 5%;
+      margin-top: 200px;
     }
 
     .principal-product-effect-phrase {
@@ -53,7 +51,7 @@
     }
 
     .principal-product-effect-phrase>p>strong {
-      color: #fff;
+      color: var(--text-color);
       font-weight: 500;
     }
   }
@@ -79,8 +77,9 @@
 
       margin: 0;
 
+      border: 1px solid var(--light-cian);
       .button-link {
-        color: #000;
+        color: var(--cian);
         text-decoration: none;
 
         font-size: 16px;
@@ -89,7 +88,7 @@
     }
 
     .right-button {
-      background-color: #000;
+      background-color: var(--light-cian);
       border: none;
 
       height: 48px;
@@ -98,8 +97,6 @@
       border-radius: 24px;
 
       margin: 0;
-
-      border: 1px solid #fff;
       .button-link {
         color: #fff;
         text-decoration: none;

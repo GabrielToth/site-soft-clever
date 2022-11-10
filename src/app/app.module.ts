@@ -8,9 +8,10 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './content/home/home.component';
 import { TopBannerComponent } from './content/home/top-banner/top-banner.component';
+import { HomeCardsComponent } from './content/home/home-cards/home-cards.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, FooterComponent, HomeComponent, TopBannerComponent],
+  declarations: [AppComponent, MenuComponent, FooterComponent, HomeComponent, TopBannerComponent, HomeCardsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
