@@ -2,15 +2,12 @@
   position: relative;
   width: 100%;
   height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   overflow: hidden;
-
   margin-top: -8vh;
-
   background-image: url("../../../../assets/images/webp/top-banner-women-background-1920x1080.webp");
   background-repeat: no-repeat;
   background-position: center top;
@@ -18,14 +15,11 @@
 
   .first-banner {
     width: 100%;
-
     position: absolute;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    
     color: var(--text-color);
-
     overflow: hidden;
 
     .banner {
@@ -42,22 +36,19 @@
       font-size: 7vh;
       font-weight: 900;
       line-height: 1.5em;
-
       color: #222;
-      
       margin-top: 10vh;
     }
 
     .principal-product-effect-phrase {
       color: #888;
       font-size: 2.5vh;
-
       margin-bottom: 10%;
-    }
 
-    .principal-product-effect-phrase>p>strong {
-      color: var(--text-color);
-      font-weight: 500;
+      > p > strong {
+        color: var(--text-color);
+        font-weight: 500;
+      }
     }
   }
 
@@ -65,27 +56,25 @@
     width: 50%;
     height: 7.5vh;
     z-index: 1;
-
     display: flex;
     justify-content: center;
-
     gap: 4vw;
+
+    @media screen and (max-width: 100vh) {
+      width: 100%;
+    }
 
     .left-button {
       background-color: #fff;
       border: none;
-
       width: 35%;
-
       border-radius: 5vh;
-
       margin: 0;
-
       border: 1px solid var(--light-cian);
+
       .button-link {
         color: var(--cian);
         text-decoration: none;
-
         font-size: 2vh;
         font-weight: 500;
       }
@@ -94,19 +83,17 @@
     .right-button {
       background-color: var(--light-cyan);
       border: none;
-
       width: 35%;
-
       border-radius: 5vh;
-
       margin: 0;
+
       .button-link {
         color: #fff;
         text-decoration: none;
-
         font-size: 2vh;
         font-weight: 500;
       }
     }
   }
 }
+
